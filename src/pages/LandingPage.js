@@ -29,7 +29,10 @@ const LandingPage = () => {
                 Start Your Journey for Free
               </Button>
             </Col>
-            <Col lg={5} className="d-none d-lg-block hero-visual-col">
+            {/* --- THIS IS THE FIX --- */}
+            {/* The classes `d-none` and `d-lg-block` were removed to make the GIF visible on all screen sizes. */}
+            {/* `mt-5 mt-lg-0` was added for proper spacing on mobile. */}
+            <Col lg={5} className="hero-visual-col mt-5 mt-lg-0">
               <Image 
                 src="/images/hero-visual.gif" 
                 fluid 
