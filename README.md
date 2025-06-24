@@ -2,7 +2,8 @@
   Link : https://github.com/cvenkataravikiran/CareerPath-AI-Backend.git
 
 # CareerPath-AI-Frontend
-     This is the frontend for CareerPath AI, a modern, responsive web application built with React. It provides the complete user     interface for interacting with the AI-powered career guidance platform, from user authentication and dashboard management to roadmap    visualization and the AI chatbot.
+-
+This is the frontend for CareerPath AI, a modern, responsive web application built with React. It provides the complete user interface for interacting with the AI-powered career guidance platform, from user authentication and dashboard management to roadmap  visualization and the AI chatbot.
 ----
 ## ✨ Core Features
 
@@ -27,16 +28,16 @@
 - **Styling:** Custom CSS 
 - **Icons:** React-Icons
 ----
+
 ## 🚀 Getting Started
 
 ### Installation & Setup
 
-**Clone the repository:**
-    ```sh
+1. **Clone the repository:**
+   
     https://github.com/cvenkataravikiran/CareerPath-AI-Frontend.git
-    
     cd careerpath-ai/frontend
-    ```
+    
 
 2.  **Install the required dependencies:**
     ```sh
