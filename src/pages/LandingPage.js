@@ -3,8 +3,7 @@
 import React from 'react';
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import LandingFooter from '../components/layout/LandingFooter';
-import heroVisual from '../assets/images/hero-visual.gif'; 
+import LandingFooter from '../components/layout/LandingFooter'; 
 
 // --- UPDATED ICONS ---
 // Added FaRobot, SiTensorflow, SiNodedotjs, SiDocker, SiJavascript, SiKubernetes
