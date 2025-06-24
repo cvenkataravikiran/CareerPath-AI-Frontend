@@ -34,7 +34,8 @@ This is the frontend for CareerPath AI, a modern, responsive web application bui
 
 **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/careerpath-ai.git
+    https://github.com/cvenkataravikiran/CareerPath-AI-Frontend.git
+    
     cd careerpath-ai/frontend
     ```
 
