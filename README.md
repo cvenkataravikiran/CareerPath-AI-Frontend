@@ -54,8 +54,9 @@ This is the frontend for CareerPath AI, a modern, responsive web application bui
     ```
 
 4.  **Start the development server:**
-    
+    ```
     npm start
+    ```
     
     The application will open in your browser, typically at `http://localhost:3000`.
 
