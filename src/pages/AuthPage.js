@@ -1,4 +1,4 @@
-// src/pages/AuthPage.js
+// frontend/src/pages/AuthPage.js
 
 import React, { useState } from 'react';
 import { Form, Button, Card, Row, Col, Container, Tabs, Tab, Alert, Spinner, Image } from 'react-bootstrap';
@@ -57,12 +57,9 @@ const AuthPage = () => {
       <div className="d-flex flex-column align-items-center">
         
         <div className="auth-header d-flex align-items-center">
-          {/* Logo still links to the landing page */}
           <Link to="/">
             <Image src="/logo.png" alt="CareerPath AI Logo" className="auth-logo" />
           </Link>
-          
-          {/* --- UPDATED: Title is now also a link --- */}
           <Link to="/" className="text-decoration-none">
             <h1 className="auth-title ms-4 mb-0">CareerPath AI</h1>
           </Link>
@@ -72,12 +69,21 @@ const AuthPage = () => {
           <Card.Body className="p-4">
             {error && <Alert variant="danger" onClose={() => setError('')} dismissible>{error}</Alert>}
             
+            {/* ======================= START: THE FIX ======================= */}
+            {/* We modify the onSelect handler. When a tab is clicked, it will
+                now not only set the active tab key but ALSO clear any existing
+                error messages. This prevents a signup error from appearing on
+                the login form. */}
             <Tabs 
               activeKey={key} 
-              onSelect={(k) => setKey(k)} 
+              onSelect={(k) => {
+                setKey(k);
+                setError('');
+              }} 
               className="nav-tabs-modern mb-4" 
               justify
             >
+            {/* ======================== END: THE FIX ======================== */}
               <Tab eventKey="login" title="Login">
                 <Form onSubmit={handleLogin}>
                   <Form.Group className="mb-3" controlId="loginEmail">
